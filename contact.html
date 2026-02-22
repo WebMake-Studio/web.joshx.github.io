@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/channels_profil.png" type="image/x-icon">
+  <title>Joshx • Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header>
+    <h1>Joshx</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="social.html">Réseaux</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+
+    <section class="hero hero-sm">
+      <div class="hero-sub">Communication</div>
+      <h1 class="hero-title hero-title-sm">Contact</h1>
+      <p class="hero-desc">
+        Une question, une idée de collab ou juste envie d'échanger ?<br>
+        N'hésite pas à m'écrire.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-card-label">Horaires</div>
+            <div class="info-card-value">🕒 Lundi – Samedi<br>8h00 – 19h00</div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-label">WhatsApp</div>
+            <div class="info-card-value">Moyen de contact recommandé pour une réponse rapide.</div>
+            <a class="whatsapp-btn" href="https://bit.ly/contactJoshx" target="_blank">📱 Envoyer un message</a>
+          </div>
+
+          <div class="info-card info-card-accent">
+            <div class="info-card-label info-card-label-red">Note</div>
+            <div class="info-card-value" style="font-size:13px;color:var(--muted)">
+              Pour les collabs et partenariats, précise l'objet de ta demande dès le début du message.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="section-label" style="margin-bottom:6px">Formulaire</div>
+          <div class="section-title" style="font-size:22px;margin-bottom:20px">Envoyer un message</div>
+
+          <div class="form-notice">
+            ⚠️ Le formulaire n'est pas encore fonctionnel. Utilise WhatsApp pour un contact direct.
+          </div>
+
+          <form action="/envoyer-message" method="post">
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom</label>
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="Ton nom" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="ton@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input form-textarea" id="message" name="message" placeholder="Ton message…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-gradient btn-full">Envoyer le message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>Joshx</span> • All Rights Reserved 2025 • Version 1.1.2 • Dev by WebMake
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
